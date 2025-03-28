@@ -1,0 +1,32 @@
+.about .row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    
+}
+.about .row .image img{
+    width: 100%;
+    animation: var(--float-animation);
+}
+.about .row .content{
+    flex: 1 1 40rem;
+    text-align: center;
+}
+.about .row .content span{
+    font-size: 2rem;
+    color: var(--main-color);
+}
+.about .row .content h3{
+    font-size: 3rem;
+    color: var(--link);
+    margin-bottom: 1rem;
+    margin-top: .5rem;
+}
+.about .row .content p{
+    line-height: 1.8;
+    padding: .5rem 0;
+    color: var(--white);
+    text-shadow: var(--box-shadow);
+    font-size: 1.8rem;
+}

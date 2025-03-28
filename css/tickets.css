@@ -1,0 +1,48 @@
+.tickets{
+    background: url(../img/confete.jpg);    
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: fixed;
+    background-color: rgba(0,0,0,.6);
+    background-blend-mode: color;
+}
+
+.tickets .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 35rem);
+    align-items: flex-start;
+    justify-content: center;
+    gap: 2rem;
+}
+.tickets .box-container .box{
+    background: var(--bg-color);
+    padding: 3rem 2rem;
+    border-radius: 2rem;
+    text-align: center;
+    box-shadow: var(--box-shadow);
+}
+.tickets .box-container .box:nth-child(2){
+    background: var(--second-color);
+}
+.tickets .box-container .box:hover{
+    animation: var(--pulse-animation);
+}
+.tickets .box-container .box h3{
+    font-size: 3rem;
+    color: var(--white);
+    padding-bottom: 1rem;
+}
+.tickets .box-container .box .price{
+    font-size: 5rem;
+    color: var(--main-color);
+    margin: 1rem 0;
+}
+.tickets .box-container .box span{
+    font-size: 3rem;
+}
+.tickets .box-container .box p{
+    padding: 1rem 0;
+    font-size: 1.8rem;
+    color: var(--link);
+    line-height: 1.8;
+}

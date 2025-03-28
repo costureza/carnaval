@@ -1,0 +1,42 @@
+.countdown{
+    background: var(--black);
+}
+.countdown section{
+    position: relative;
+    z-index: 0;
+}
+.countdown .image{
+    position: absolute;
+    top: 5rem;
+    left: 0;
+    right: 0;
+    z-index: -1;
+}
+.countdown .image img{
+    width: 26%;
+    animation: var(--float-animation);
+}
+.countdown .couter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+.countdown .couter .box{
+    text-align: center;
+    width: 15rem;
+    padding: 1rem;
+    background-color: rgba(155,155,155,.1);
+    backdrop-filter: blur(1rem);
+}
+.countdown .couter .box h3{
+    font-size: 4.5rem;
+    color: var(--main-color);
+    text-shadow: var(--box-shadow);
+    margin-bottom: 1rem;
+}
+.countdown .couter .box span{
+    color: var(--white);
+    font-size: 1.8rem;
+}

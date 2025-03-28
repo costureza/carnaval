@@ -1,0 +1,50 @@
+@media (max-width:991px) {
+    html{
+        font-size: 55%;
+    }
+    .info-container .box-container .box{
+        transform: none;
+    }
+    .info-container .box-container .box:nth-child(even){
+        transform: none;
+    }
+}
+@media (max-width:768px) {
+    #menu-btn{
+        display: inline-block;
+    }
+    #menu-btn .fa-xmark{
+        transform: rotate(90deg);
+    }
+    .header .flex .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: var(--black);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+    .header .flex .navbar .active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+    .header .flex .navbar a{
+        font-size: 2.5rem;
+        margin: 2rem;
+        display: block;
+    }
+}
+
+@media (max-width:450px) {
+    html{
+        font-size: 50%;
+    }
+    .title{
+        font-size: 3rem;
+    }
+    .home{
+        min-height: 80vh;
+    }
+    .about .row .content p{
+        font-size: 1.8rem;
+    }
+}

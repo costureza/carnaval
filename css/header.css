@@ -1,0 +1,35 @@
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+.header .active{
+    background: rgba(0,0,0,.6);
+    backdrop-filter: blur(2rem);
+}
+.header .flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 2rem;
+}
+.header .flex .logo img{
+    height: 5.5rem;
+}
+.header .flex .navbar a{
+    font-size: 2rem;
+    margin-left: 2rem;
+    color:var(--white);
+    text-transform: capitalize;
+}
+.header .flex .navbar a:hover{
+    color: var(--link);
+}
+
+#menu-btn{
+    font-size: 2.5rem;
+    color: var(--white);
+    display: none;
+}

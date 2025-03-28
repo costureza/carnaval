@@ -1,0 +1,44 @@
+.contact .row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.contact .row .content{
+    flex: 1 1 40rem;
+}
+.contact .row .content h3{
+    font-size: 2.5rem;
+    color: var(--main-color);
+    margin-bottom: 1rem;
+}
+.contact .row .content p{
+    padding: 1rem 0;
+    font-size: 1.8rem;
+    color: var(--link);
+}
+.contact .row .content p a{
+    color: var(--link);
+}
+.contact .row .content p a:hover{
+    color: var(--main-color);
+}
+.contact .row form{
+    flex: 1 1 40rem;
+}
+.contact .row form .input{
+    margin: .5rem 0;
+    width: 100%;
+    padding: 1.4rem;
+    color: var(--link);
+    border-radius: .5rem;
+    background-color: rgba(255, 255, 255, 0.267);
+}
+.contact .row form .input::placeholder{
+    color: var(--link);
+    text-transform: capitalize;
+}
+.contact .row form textarea{
+    height: 15rem;
+    resize: none;
+}

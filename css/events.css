@@ -1,0 +1,39 @@
+.events .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 35rem);
+    align-items: flex-start;
+    justify-content: center;
+    gap: 2rem;
+}
+.events .box-container .box{
+    border-radius: 2rem;
+    text-align: center;
+    padding: 2rem;
+    background-color: var(--second-color);
+}
+.events .box-container .box:nth-child(odd){
+    background-color: var(--main-color);
+}
+.events .box-container .box:nth-child(odd) h3{
+    color: var(--ligh-white);
+}
+.events .box-container .box:nth-child(odd) p{
+    color: var(--ligh-white);
+}
+.events .box-container .box img{
+    height: 20rem;
+    margin-bottom: 1rem;
+}
+.events .box-container .box:hover img{
+    animation: var(--shake-animation);
+}
+.events .box-container .box h3{
+    font-size: 2rem;
+    color: var(--white);
+    margin:1rem 0;
+}
+.events .box-container .box p{
+    font-size: 1.6rem;
+    color: var(--white);
+    line-height: 1.8;
+}

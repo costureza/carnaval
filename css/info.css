@@ -1,0 +1,63 @@
+.title{
+    margin-bottom: 2rem;
+    text-align: center;
+}
+.title span{
+    font-size: 2rem;
+    color: var(--white);
+    text-shadow: var(--box-shadow);
+}
+.title h3{
+    font-family: var(--title-font);
+    font-size: 4rem;
+    color: var(--main-color);
+    font-weight: normal;
+}
+.info-container{
+    background: var(--bg-color);
+}
+.info-container .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 27rem);
+    align-items: flex-start;
+    justify-content: center;
+    gap: 2rem;
+    padding-top: 2rem;
+}
+.info-container .box-container .box{
+    border-radius: 1rem;
+    padding: 3rem 2rem;
+    background-color: var(--main-color);
+    text-align: center;
+    transform: translateY(-1rem);
+}
+.info-container .box-container .box:nth-child(even){
+    background: var(--black);
+    transform: translateY(-1rem);
+}
+
+.info-container .box-container .box:nth-child(even){
+    color: var(--white);
+}
+.info-container .box-container .box img{
+    height: 25rem;
+    width: 100%;
+    object-fit: contain;
+}
+.info-container .box-container .box h3{
+    margin-top: 2rem;
+    font-size: 2rem;
+    color: var(--white);
+}
+.info-container .box-container .box:nth-child(1) img{
+    animation: var(--bounce-animation) infinite;
+}
+.info-container .box-container .box:nth-child(2) img{
+    animation: var(--jello-animation) infinite;
+}
+.info-container .box-container .box:nth-child(3) img{
+    animation: var(--pulse-animation) infinite;
+}
+.info-container .box-container .box:nth-child(4) img{
+    animation: var(--shake-animation) infinite;
+}

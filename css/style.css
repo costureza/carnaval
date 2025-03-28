@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&family=Spicy+Rice&display=swap');
+:root{
+    --geral-font:"Sour Gummy", sans-serif;;
+    --title-font:"Spicy Rice", serif;    
+    --main-color: #dd3391b9;
+    --second-color:#bd0ff288;
+    --bg-color:#38b4ae57;
+    --black:#04BF55;
+    --link:#F2A74B;
+    --white:#fff;
+    --ligh-white:rgba(255,255,255,.5);
+    --box-shadow:0 .5rem 1rem rgba(0,0,0,.3);
+    --jello-animation: jello 0.9s both;
+    --bounce-animation:bounce 0.9s both;
+    --pulse-animation:pulse 0.5s ease-in-out both;
+    --shake-animation: shake 0.8s cubic-bezier(0.455,0.030,0.515,0.955) both;
+    --float-animation:float 2s linear infinite;
+}
+
+*{
+    font-family: var(--geral-font);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: .2s linear;
+}
+html{
+    font-size: 62.5%;
+    scroll-padding-top: 8rem;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar{
+    width: 1rem;
+}
+::-webkit-scrollbar-track{
+    background-color: transparent;
+}
+::-webkit-scrollbar-thumb{
+    background-color: var(--white);
+}
+body{
+    background-color: var(--bg-color);
+}
+section{
+    padding: 3rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+@keyframes jello {
+    0%{
+        transform: scale3d(1,1,1);
+    }
+    30%{
+        transform: scale3d(1.25,0.75,1);
+    }
+    40%{
+        transform: scale3d(0.75,1.25,1);
+    }
+    50%{
+        transform: scale3d(1.15,0.85,1);
+    }
+    65%{
+        transform: scale3d(0.95,1.05,1);
+    }
+    75%{
+        transform: scale3d(1.05,0.95,1);
+    }
+    100%{
+        transform: scale3d(1,1,1);
+    }
+}
+@keyframes bounce{
+    0%{
+        transform: translateY(-45px);
+        animation-timing-function: ease-in;
+        opacity: 1;
+    }
+    24%{
+        opacity: 1;
+    }
+    40%{
+        transform: translateY(-24px);
+        animation-timing-function: ease-in;
+    }
+    65%{
+        transform:translateY(-12px) ;
+        animation-timing-function: ease-in;
+    }
+    82%{
+        transform: translateY(-6px);
+        animation-timing-function: ease-in;
+    }
+    93%{
+        transform: translateY(-4px);
+        animation-timing-function: ease-in;
+    }
+    25%, 55%, 75%, 87%{
+        transform: translateY(0px);
+        animation-timing-function: ease-out;
+    }
+    100%{
+        transform: translateY(0px);
+        animation-timing-function: ease-out;
+        opacity: 1;
+    }
+}
+@keyframes pulse{
+    0%, 100%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(.9);
+    }
+}
+@keyframes shake{
+    0%, 100%{
+        transform: rotate(0deg);
+        transform-origin: 50% 100%;
+    }
+    10%{
+        transform: rotate(2deg);
+    }
+    20%,40%, 60%{
+        transform: rotate(-4deg);
+    }
+    30%, 50%, 70%{
+        transform: rotate(4deg);
+    }
+    80%{
+        transform: rotate(-2deg);
+    }
+    90%{
+        transform: rotate(2deg);
+    }
+}
+@keyframes float {
+    0%, 100%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-1rem);
+    }
+}

@@ -1,0 +1,32 @@
+.footer{
+    background: var(--bg-color);
+    text-align: center;
+}
+.footer .share{
+    margin-bottom: 3rem;
+}
+.footer .share a{
+    height: 5rem;
+    width: 5rem;
+    font-size: 2.5rem;
+    margin: 0 .4rem ;
+    line-height: 5rem;
+    color: var(--white);
+    background-color: var(--second-color);
+    border-radius: 50%;
+}
+.footer .share a:hover{
+    animation: var(--jello-animation);
+}
+.footer .credit{
+    font-size: 2rem;
+    color: var(--main-color);
+}
+.footer .credit span {
+    color: var(--link);
+}
+
+.footer .image img{
+    margin-bottom: -.5rem;
+    width: 55%;
+}
