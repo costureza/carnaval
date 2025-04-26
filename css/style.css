@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&family=Spicy+Rice&display=swap');
 :root{
-    --geral-font:"Sour Gummy", sans-serif;;
+    --geral-font:"Sour Gummy", sans-serif;
     --title-font:"Spicy Rice", serif;    
-    --main-color: #dd3391b9;
+    --main-color: #DD3391;
     --second-color:#bd0ff288;
     --bg-color:#38b4ae57;
-    --black:#04BF55;
-    --link:#F2A74B;
+    --black:#51adaa;
+    --link:#3C00FF;
     --white:#fff;
     --ligh-white:rgba(255,255,255,.5);
     --box-shadow:0 .5rem 1rem rgba(0,0,0,.3);

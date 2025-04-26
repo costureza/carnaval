@@ -26,7 +26,6 @@
 .about .row .content p{
     line-height: 1.8;
     padding: .5rem 0;
-    color: var(--white);
-    text-shadow: var(--box-shadow);
+    color: var(--main-color);    
     font-size: 1.8rem;
 }
